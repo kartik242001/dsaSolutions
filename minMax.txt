@@ -1,0 +1,20 @@
+ 
+ public static int findSum(int A[],int N) 
+    {
+        //code here
+        int maxElement = Integer.MIN_VALUE;
+    	int minElement = Integer.MAX_VALUE;
+    	for(int i = 0; i < N; i++){
+    	    if(A[i]>maxElement){
+    	        maxElement = A[i];
+    	    }
+    	}
+    	
+    	for(int i = 0;  i < N;i++){
+    	    if(A[i]<minElement){
+    	        minElement = A[i];
+    	    }
+    	}
+    	
+    	return (maxElement + minElement);
+    }
